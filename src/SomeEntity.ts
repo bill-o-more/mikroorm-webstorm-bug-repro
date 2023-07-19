@@ -36,11 +36,7 @@ export class SomeEntityRepository extends EntityRepository<SomeEntity> {
         return this.findOne({ id });
     }
 
-    async reallyRandomMethodName(id: string) {
-        return this.findOne({ id });
-    }
-
-    async getByPhoneNumber(id: string) {
+    async duplicatedMethodName(id: string) {
         return this.findOne({ id });
     }
 }

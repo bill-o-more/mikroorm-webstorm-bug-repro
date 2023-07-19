@@ -16,7 +16,7 @@ export class AnotherEntity {
 }
 
 export class AnotherEntityRepository extends EntityRepository<AnotherEntity> {
-    async reallyRandomMethodName(id: string) {
+    async duplicatedMethodName(id: string) {
         return this.findOne({ id });
     }
 }

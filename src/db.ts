@@ -23,8 +23,8 @@ const thisWayItWorksOneWay3 = SomeEntityRepo.get('123');
 /**
  * If you add a method with the same name into multiple repositories, discovery from the declaration stops working
  */
-const thisWayItWorksOneWay4 = SomeEntityRepo.reallyRandomMethodName('123');
-const thisWayItWorksOneWay5 = AnotherEntityRepo.reallyRandomMethodName('123');
+const thisWayItWorksOneWay4 = SomeEntityRepo.duplicatedMethodName('123');
+const thisWayItWorksOneWay5 = AnotherEntityRepo.duplicatedMethodName('123');
 
 /**
  * Even if you rename getById to getByID, the problem disappears. Other names seem to work well too
@@ -38,7 +38,7 @@ const thisNameWorksGood2 = SomeEntityRepo.thisMethodWorksWell('123');
  * (pressing Command+ Click on the method declaration will lead here)
  */
 const hardWired = new SomeEntityRepository(orm.em, SomeEntity);
-const thisWayItWorksBothWays = hardWired.getMember('123');
+// const thisWayItWorksBothWays = hardWired.getMember('123');
 
 /**
  * IMPORTANT NOTE: EVEN IF DISCOVERY SEEMS TO WORK AND COMMAND+CLICK LEADS TO THE METHOD USAGE, REFACTOR WON'T WORK
