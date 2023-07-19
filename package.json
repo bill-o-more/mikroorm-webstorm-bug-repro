@@ -1,0 +1,24 @@
+{
+  "name": "mikroorm-webstorm-bug-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node --esm ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "mikro-orm": {
+    "useTsNode": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mikro-orm/core": "^5.7.13",
+    "@mikro-orm/postgresql": "^5.7.13",
+    "@mikro-orm/reflection": "^5.7.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
