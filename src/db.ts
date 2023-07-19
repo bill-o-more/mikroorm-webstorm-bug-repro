@@ -23,8 +23,8 @@ const thisWayItWorksOneWay3 = SomeEntityRepo.get('123');
 /**
  * If you add a method with the same name into multiple repositories, discovery from the declaration stops working
  */
-const thisWayItWorksOneWay6 = SomeEntityRepo.reallyRandomMethodName('123');
-const thisWayItWorksOneWay7 = AnotherEntityRepo.reallyRandomMethodName('123');
+const thisWayItWorksOneWay4 = SomeEntityRepo.reallyRandomMethodName('123');
+const thisWayItWorksOneWay5 = AnotherEntityRepo.reallyRandomMethodName('123');
 
 /**
  * Even if you rename getById to getByID, the problem disappears. Other names seem to work well too
