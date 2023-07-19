@@ -13,8 +13,7 @@ export const AnotherEntityRepo = orm.em.getRepository(AnotherEntity);
  * WebStorm doesn't see the usage in SomeEntityRepository.ts
  * (pressing Command+ Click on the method declaration name won't lead here)
  *
- * It happens with only these 3 method names (or at least that's what I found), but not with the third one.
- * If you rename these methods, the problem disappears
+ * It happens with only these 3 method names (or at least that's what I found)
  */
 const thisWayItWorksOneWay = SomeEntityRepo.getMember('123');
 const thisWayItWorksOneWay2 = SomeEntityRepo.getById('123');
